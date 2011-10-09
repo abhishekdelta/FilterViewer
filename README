@@ -1,0 +1,82 @@
+FilterViewer is a JAVA and MATLAB based software for visualizing the layout and analyzing the responses of various types of microwave filters including Interdigital Filters, Tchebychev Low Pass and Butterworth Low Pass Filters.
+
+
+::: Graphical User Interface (GUI) Details :::
+
+:: About ::
+
+The GUI has been entirely written using the JAVA programming language. Specifically, the SWT (Standard Widget Toolkit) Technology is used, which can be found in the Eclipse IDE by default. It was written with the help of Eclipse IDE and was interfaced with the MATLAB software for backend computations, using the MATLAB’s com.mathworks.jmi package. This package comes installed with the MATLAB software already.
+
+
+:: Main Features ::
+
+	1) New Project Wizard for creating new projects
+	2) Open Project Wizard can open existing projects saved anywhere in the harddisk
+	3) Save Project Wizard can save a project after modifying anywhere in the harddisk
+	4) The main windows consist of tabs for handling multiple projects at the same time.
+	5) The graphs and layouts are generated using MATLAB and hence incorporates all the features like 3-D viewing, rotating, zooming, labeling, coloring, etc
+	6) At most 15 projects can be opened and worked with simultaneously.
+
+:: Requirements ::
+
+	1) MATLAB (7.6 or above) must be installed and working properly.
+	2) Eclipse IDE for JAVA.
+	3) FilterViewer software source codes.
+
+:: Installation ::
+
+	: Assumptions :
+	
+	1) MATLAB installation directory is "C:\Program Files\MATLAB\R2008a"
+	2) Eclipse IDE installation directory is "C:\Eclipse"
+	3) FilterViewer codes directory is "C:\FilterViewer"
+	Note: Please change the above directories in the following steps depending on where you installed the specified programs.
+
+	: Step 1 : 
+
+	Make sure the following lines are in the MATLAB Java CLASSPATH :
+
+	C:\FilterViewer\java\micfilter
+	C:\FilterViewer\java
+	C:\Eclipse\plugins
+	C:\Eclipse\plugins\org.eclipse.swt.win32.win32.x86_3.2.2.v3236.jar
+	C:\Eclipse\plugins\org.eclipse.swt_3.2.2.v3236b.jar
+	C:\Eclipse\configuration\org.eclipse.osgi\bundles
+	C:\Eclipse\configuration\org.eclipse.osgi\bundles\79\1\.cp
+
+	To add the above lines, in the MATLAB prompt, type
+	"edit classpath.txt"
+	and add those lines in the editor which opened.
+
+	: Step 2 :
+
+	Make sure the following lines are in the MATLAB Current Directory Path 
+
+	C:\FilterViewer\matlab
+
+	To do this, execute this command with the above directory path:
+	"addpath C:\FilterViewer\matlab"
+
+	: Step 3 :
+
+	Make sure the following lines are in your operating systems PATH environment variable.
+
+	C:\Program Files\MATLAB\R2008a\bin;
+	C:\Program Files\MATLAB\R2008a\bin\win32;
+	C:\Program Files\MATLAB\R2008a\java\jar;
+	C:\Eclipse\configuration\org.eclipse.osgi\bundles\79\1\.cp;
+	C:\Eclipse\configuration\org.eclipse.osgi\bundles;
+
+	To do this :
+	1) Right-click on “My Computer” icon in Desktop or “Computer” icon from Start Menu and go to “Properties”.
+	2) Go to “Advanced System Settings” or click on “Advanced tab”, whichever exists.
+	3) Click on “Environment Variables” button and from the “System variables” list select the variable called “Path”.
+	4) Then click on “Edit” and then append the above lines (separated by semi-colon) in “Variable value” field.
+
+
+:: Running ::
+
+	Open MATLAB and type the following in the MATLAB prompt:
+
+	micfilter.MICFilter.main({});
+
