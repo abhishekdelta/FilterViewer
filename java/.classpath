@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/swt"/>
+	<classpathentry kind="lib" path="C:/Program Files/MATLAB/R2008a/java/jar/jmi.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

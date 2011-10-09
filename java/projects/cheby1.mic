@@ -1,0 +1,13 @@
+PROJECTNAME=Project2;
+FILTERTYPE=Stepped Impedance Lowpass Chebyshev;
+FILTERID=0;
+WC=2.5*10^9;
+WS=4*10^9;
+AM=10;
+A=22;
+ZO=50;
+ZL=150;
+ZH=10;
+ER=9;
+B=0.0063;
+TYPE=1;

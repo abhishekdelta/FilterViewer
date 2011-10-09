@@ -1,0 +1,15 @@
+PROJECTNAME=Project1;
+FILTERTYPE=Interdigital Bandpass Filter;
+FILTERID=2;
+WC=2.5*10^9;
+WS=12*10^9;
+A=30;
+ZO=50;
+ZL=10;
+ZH=120;
+ER=9;
+B=0.06;
+TYPE=1;
+WO=10*10^9;
+FBW=0.01;
+T=0.001;
